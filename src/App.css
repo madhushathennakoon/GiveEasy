@@ -1,0 +1,221 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+}
+
+.nav-sidebar {
+  width: 80px;
+  background-color: #1a1a1a;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-logo {
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+.nav-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  margin-bottom: 20px;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.dashboard-content {
+  flex-grow: 1;
+  padding: 30px;
+  background-color: #ffffff;
+}
+
+.dashboard-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.status-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.status-tab {
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.status-tab-active {
+  background-color: #e8ffcf;
+}
+
+.status-tab-upcoming {
+  background-color: #e5f3ff;
+}
+
+.status-tab-completed {
+  background-color: #f0f0f0;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.view-controls,
+.action-controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.control-button {
+  background: none;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.search-input {
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 5px 10px 5px 30px;
+  width: 200px;
+}
+
+.create-button {
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.campaign-list {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.campaign-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.campaign-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.campaign-content {
+  padding: 15px;
+}
+
+.campaign-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.campaign-title {
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.campaign-status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.status-badge {
+  background-color: #e8ffcf;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.campaign-date {
+  font-size: 12px;
+  color: #666;
+}
+
+.campaign-metrics {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.metric-label {
+  font-size: 12px;
+  color: #666;
+}
+
+.metric-value {
+  font-weight: bold;
+}
+
+.progress-bar {
+  height: 6px;
+  background-color: #e0e0e0;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #4caf50;
+}
+
+.progress-text {
+  text-align: right;
+  font-size: 12px;
+  color: #666;
+  margin-top: 5px;
+}
